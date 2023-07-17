@@ -1,0 +1,9 @@
+# Created by https://www.toptal.com/developers/gitignore/api/obsidian
+# Edit at https://www.toptal.com/developers/gitignore?templates=obsidian
+
+### Obsidian ###
+# config dir
+.obsidian/
+.Mobile_Store_Group_Project_requirements/obsidian/
+
+# End of https://www.toptal.com/developers/gitignore/api/obsidian
