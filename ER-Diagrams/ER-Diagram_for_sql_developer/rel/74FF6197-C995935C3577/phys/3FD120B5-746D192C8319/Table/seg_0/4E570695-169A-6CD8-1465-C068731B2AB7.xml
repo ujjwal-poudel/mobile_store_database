@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SUPPLIER" directorySegmentName="seg_0" id="4E570695-169A-6CD8-1465-C068731B2AB7">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:39:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2AA718E8-0B49-7A74-330E-B3B226C7A958</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SUPPLIER_NAME" id="20B21001-B21D-92B7-8378-42E3703E5776">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:39:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUPPLIER_CONTRACT_DATE" id="37FC6D52-5C0A-981E-7F3C-23875758B29E">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:39:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUPPLIER_ID" id="8F1E316F-7955-8447-1BCE-EE62969968B1">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:39:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SUPPLIER_PK" id="C2B0CDD3-DDF3-22D7-13DE-A06CB583C393">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:39:07 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<segment>162E9FF2-C293-6895-2DB2-276755BF24CF</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<indexSegment>162E9FF2-C293-6895-2DB2-276755BF24CF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PAYMENT" directorySegmentName="seg_0" id="8E430FB5-F3ED-A76A-3100-5CFD4353921A">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2AA718E8-0B49-7A74-330E-B3B226C7A958</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CARD_NUMBER" id="003278A1-E155-02A6-A6A3-1543AC0DCCC1">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAYMENT_TOTAL" id="21DEFC92-B31A-8A8E-5490-6D6CA2D4F676">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUSTOMER_ID" id="5448A34C-B01C-5C08-659F-7FDEE5BB0B53">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAYMENT_STATUS" id="62F68015-0979-D5F7-059A-DF71E475B101">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAYMENT_DATE" id="688A6EEC-8E81-2A92-2EDA-80368B5407C1">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CART_ID" id="88D42695-4C1D-859F-B0A1-48A21C629812">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAYMENT_TIME" id="9D78CD5D-643B-534A-AF77-F834BE4F1F02">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAYMENT_CARD_TYPE" id="A0834DD4-B0B3-6FC1-787F-CCB42186511A">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAYMENT_REF_NUMBER" id="BA5B08E6-79CF-729A-3B03-12445389CFC0">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C002011935" id="6A52090C-FA60-6E61-D61B-B7C496FF0F55">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C002011934" id="EA4E88E2-66A4-42B3-9938-5029A43F954E">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PAYMENT_PK" id="9E60BD79-3596-EB96-59EF-73548A712183">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<segment>162E9FF2-C293-6895-2DB2-276755BF24CF</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<indexSegment>162E9FF2-C293-6895-2DB2-276755BF24CF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

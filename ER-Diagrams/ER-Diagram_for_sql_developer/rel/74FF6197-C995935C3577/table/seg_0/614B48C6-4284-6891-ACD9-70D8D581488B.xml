@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="614B48C6-4284-6891-ACD9-70D8D581488B" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="SHIPPING">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SHIPPING</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:38:17 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAYMENT_REF_NUMBER" id="73985C2C-F3C3-0B5A-F6E7-1881B26424E1">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SHIPPING</sourceObjSchema>
+<sourceObjName>PAYMENT_REF_NUMBER</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:38:18 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4FAF66A6-CA87-EEAB-E4BF-C3FFC33196FF" referredColumn="BA5B08E6-79CF-729A-3B03-12445389CFC0"/>
+</associations>
+</Column>
+<Column name="SHIPPING_STATUS" id="6482D871-EE08-7A6E-5D43-585C4098D716">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SHIPPING</sourceObjSchema>
+<sourceObjName>SHIPPING_STATUS</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:38:18 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIPPING_DATE" id="4B6DA453-0115-3E99-C3E2-9509FA5BDE3D">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SHIPPING</sourceObjSchema>
+<sourceObjName>SHIPPING_DATE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:38:18 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIPPING_DATE_REMAINING" id="9DE22F80-5BE2-DE27-877B-2D474101BA73">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SHIPPING</sourceObjSchema>
+<sourceObjName>SHIPPING_DATE_REMAINING</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:38:18 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0671D428-ED3F-6F9C-5AB9-5311D3924D3B" name="SYS_C002011936">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:38:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73985C2C-F3C3-0B5A-F6E7-1881B26424E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

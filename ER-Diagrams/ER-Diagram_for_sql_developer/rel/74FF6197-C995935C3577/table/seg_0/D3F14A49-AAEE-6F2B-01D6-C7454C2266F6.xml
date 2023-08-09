@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3F14A49-AAEE-6F2B-01D6-C7454C2266F6" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="CUSTOMER">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>CUSTOMER</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:47:51 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUSTOMER_ID" id="E5145D7C-E763-5F8F-C1FC-8E09B628D6EA">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>CUSTOMER_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:47:51 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_NAME" id="342FB4EC-2576-B9D5-946C-BCEB7203FE89">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>CUSTOMER_NAME</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:47:51 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_ADDRESS" id="27C08B99-0C1D-9B13-2421-8F3ADEF7E338">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>CUSTOMER_ADDRESS</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:47:51 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_EMAIL" id="DD2ACD6A-B421-792E-D64C-D988594F87D6">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>CUSTOMER_EMAIL</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:47:51 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_OFFER" id="6C2A9991-6E63-04D5-F342-94CB45478268">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>CUSTOMER_OFFER</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:47:51 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33BCAC5E-3232-41E0-7212-41F2B7A67745" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="CUSTOMER_PK">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SYS_C002011910</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:47:51 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5145D7C-E763-5F8F-C1FC-8E09B628D6EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

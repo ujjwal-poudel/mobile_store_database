@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CATEGORY" directorySegmentName="seg_0" id="17391203-32EA-DE11-A766-8B2FDF2C3D28">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2AA718E8-0B49-7A74-330E-B3B226C7A958</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CATEGORY_PRICE" id="11A331C2-C7A7-8D21-CBB3-B2158850ACCE">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CATEGORY_ID" id="3BDED440-63E8-DE68-D3ED-454F7330E204">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CATEGORY_QUANTITY" id="4480F8A9-F82E-C83B-2FDE-01ABCAAC2D39">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CATEGORY_TYPE" id="8542C7F2-2890-8751-D8BE-F18697401F88">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CATEGORY_PK" id="096DFA73-2D92-87AB-FBA0-316474E2D68A">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:03 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<segment>162E9FF2-C293-6895-2DB2-276755BF24CF</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<indexSegment>162E9FF2-C293-6895-2DB2-276755BF24CF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

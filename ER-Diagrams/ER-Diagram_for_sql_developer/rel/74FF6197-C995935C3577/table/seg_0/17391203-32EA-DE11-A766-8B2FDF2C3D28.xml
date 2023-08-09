@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17391203-32EA-DE11-A766-8B2FDF2C3D28" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="CATEGORY">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>CATEGORY</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CATEGORY_ID" id="3BDED440-63E8-DE68-D3ED-454F7330E204">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CATEGORY</sourceObjSchema>
+<sourceObjName>CATEGORY_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_TYPE" id="8542C7F2-2890-8751-D8BE-F18697401F88">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CATEGORY</sourceObjSchema>
+<sourceObjName>CATEGORY_TYPE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_QUANTITY" id="4480F8A9-F82E-C83B-2FDE-01ABCAAC2D39">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CATEGORY</sourceObjSchema>
+<sourceObjName>CATEGORY_QUANTITY</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_PRICE" id="11A331C2-C7A7-8D21-CBB3-B2158850ACCE">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CATEGORY</sourceObjSchema>
+<sourceObjName>CATEGORY_PRICE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:00 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="096DFA73-2D92-87AB-FBA0-316474E2D68A" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="CATEGORY_PK">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SYS_C002011667</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:01 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BDED440-63E8-DE68-D3ED-454F7330E204"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

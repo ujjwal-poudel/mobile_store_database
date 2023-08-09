@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SMARTPHONES" directorySegmentName="seg_0" id="7A53323E-0D74-8278-0FBA-1FD0858D5A07">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2AA718E8-0B49-7A74-330E-B3B226C7A958</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SUPPLIER_ID" id="2FC8FBC1-6AC1-64B4-7142-C8E6239FA6EB">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPHONE_PRICE" id="3B54B699-7410-51E0-ACB2-9884A07FC475">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPHONE_MODEL" id="44D7EBFD-6EF5-328E-1EC4-AE9C19017CD6">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPHONE_DISCOUNT" id="60F8F38C-EA8A-4E47-D3FD-8010DBD24B70">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPHONE_COLOR" id="8AE7A7A8-61B1-B6AE-2C7E-C6A14A2D2496">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPHONE_TYPE" id="A88D5801-9BD1-ECE0-1C92-D88212849B9E">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPHONE_BRAND" id="AB4485D2-B7EE-9825-F9E6-85277571157C">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPHONE_NAME" id="BBC4301E-E633-1165-C5F3-6BA3819EDF5D">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CATEGORY_ID" id="D1BBC8E8-1902-1D65-F620-2415D8EF1B5B">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPHONE_ID" id="EC38C1A7-64B9-B4E1-2E80-6FE276AD45D4">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C002011837" id="33AA99AE-8303-8116-CDC7-AFFFE808B78C">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C002011838" id="D672094A-F773-5A47-DC25-7A5C0C2AA755">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SMARTPHONES_PK" id="18EB5213-1854-5AEF-F6DA-E2FF1E92B242">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:47 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<segment>162E9FF2-C293-6895-2DB2-276755BF24CF</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<indexSegment>162E9FF2-C293-6895-2DB2-276755BF24CF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

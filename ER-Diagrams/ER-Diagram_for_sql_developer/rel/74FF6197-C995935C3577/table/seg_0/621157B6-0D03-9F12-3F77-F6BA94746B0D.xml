@@ -1,0 +1,204 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="621157B6-0D03-9F12-3F77-F6BA94746B0D" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="TABLETS">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>TABLETS</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TABLETS_ID" id="97E21F72-8909-A089-6970-85BEE9E85458">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>TABLETS_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_ID" id="F25A2010-646B-6E15-916A-2F7A501164AC">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>CATEGORY_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71A9F1C8-EBF2-9928-F7E3-7A1857D23883" referredColumn="3BDED440-63E8-DE68-D3ED-454F7330E204"/>
+</associations>
+</Column>
+<Column name="SUPPLIER_ID" id="E1C7BA7C-917C-E07D-0F30-4E288776E01D">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>SUPPLIER_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6E15B59-923A-8C09-824D-DEB3A657506E" referredColumn="8F1E316F-7955-8447-1BCE-EE62969968B1"/>
+</associations>
+</Column>
+<Column name="TABLETS_NAME" id="539E63A0-DAF8-E1D8-B489-C16BAF3A18B4">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>TABLETS_NAME</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLETS_TYPE" id="FD117D8A-0A88-DCD7-9028-044B438516FA">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>TABLETS_TYPE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLETS_COLOR" id="2A743099-1211-4E38-849E-7FD9D69C6B73">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>TABLETS_COLOR</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLETS_BRAND" id="5C8DF32A-4C14-91D4-50AB-7EFEF7B78B90">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>TABLETS_BRAND</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLETS_MODEL" id="B6887D3D-F033-8886-6E5C-94025428EEF3">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>TABLETS_MODEL</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLETS_PRICE" id="DEFC7A6A-015E-4F89-77F2-0400F827F655">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>TABLETS_PRICE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLETS_DISCOUNT" id="2C616D9D-6A2B-3347-AEF9-F3FE6CD6D174">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>TABLETS</sourceObjSchema>
+<sourceObjName>TABLETS_DISCOUNT</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B0C5B0A-7EB0-F2CD-C49F-0C5A5D47975F" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="TABLETS_PK">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SYS_C002011841</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:52 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97E21F72-8909-A089-6970-85BEE9E85458"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FDD50E9-0667-AFD4-C743-027B6AD21684" name="FK_CID">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:57 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F25A2010-646B-6E15-916A-2F7A501164AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85B357B3-2F3C-3816-01D0-7C8BC0E4AEF2" name="FK_SID">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:41:57 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1C7BA7C-917C-E07D-0F30-4E288776E01D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

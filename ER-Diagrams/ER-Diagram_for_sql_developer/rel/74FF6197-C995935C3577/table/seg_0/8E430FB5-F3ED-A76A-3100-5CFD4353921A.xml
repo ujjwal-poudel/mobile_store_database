@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E430FB5-F3ED-A76A-3100-5CFD4353921A" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="PAYMENT">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>PAYMENT</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAYMENT_REF_NUMBER" id="BA5B08E6-79CF-729A-3B03-12445389CFC0">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYMENT_REF_NUMBER</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_ID" id="5448A34C-B01C-5C08-659F-7FDEE5BB0B53">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>CUSTOMER_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD713AEF-B8EC-6197-E937-81FFE8FD1CB1" referredColumn="E5145D7C-E763-5F8F-C1FC-8E09B628D6EA"/>
+</associations>
+</Column>
+<Column name="PAYMENT_CARD_TYPE" id="A0834DD4-B0B3-6FC1-787F-CCB42186511A">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYMENT_CARD_TYPE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_DATE" id="688A6EEC-8E81-2A92-2EDA-80368B5407C1">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYMENT_DATE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_TIME" id="9D78CD5D-643B-534A-AF77-F834BE4F1F02">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYMENT_TIME</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARD_NUMBER" id="003278A1-E155-02A6-A6A3-1543AC0DCCC1">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>CARD_NUMBER</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_TOTAL" id="21DEFC92-B31A-8A8E-5490-6D6CA2D4F676">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYMENT_TOTAL</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_STATUS" id="62F68015-0979-D5F7-059A-DF71E475B101">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>PAYMENT_STATUS</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CART_ID" id="88D42695-4C1D-859F-B0A1-48A21C629812">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>PAYMENT</sourceObjSchema>
+<sourceObjName>CART_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D030D488-D414-505B-8D47-A47C60B8D5CB" referredColumn="58D4BEA2-D94E-9AEB-3579-78ACDBCAE329"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E60BD79-3596-EB96-59EF-73548A712183" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="PAYMENT_PK">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SYS_C002011933</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA5B08E6-79CF-729A-3B03-12445389CFC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA4E88E2-66A4-42B3-9938-5029A43F954E" name="SYS_C002011934">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5448A34C-B01C-5C08-659F-7FDEE5BB0B53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A52090C-FA60-6E61-D61B-B7C496FF0F55" name="SYS_C002011935">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:50:16 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88D42695-4C1D-859F-B0A1-48A21C629812"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

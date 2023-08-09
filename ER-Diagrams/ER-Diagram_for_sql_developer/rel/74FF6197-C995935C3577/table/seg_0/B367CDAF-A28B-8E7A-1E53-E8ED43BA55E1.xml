@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B367CDAF-A28B-8E7A-1E53-E8ED43BA55E1" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="SALES">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SALES</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:52:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SALES_ID" id="7401F8CB-CECE-2DD7-B969-6B4C34E06C78">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>SALES_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:52:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_REF_NUMBER" id="269E3B04-E52A-A83C-E27E-E0590AFD4173">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>PAYMENT_REF_NUMBER</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:52:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB938087-3D40-4FD3-F44A-EB6511E5F8B4" referredColumn="BA5B08E6-79CF-729A-3B03-12445389CFC0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6FC6CB4-C693-28F6-D704-4928AF518A31" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="SALES_PK">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SYS_C002011937</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:52:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7401F8CB-CECE-2DD7-B969-6B4C34E06C78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CAA12801-FFFD-C968-A604-13BFB373BB3C" name="SYS_C002011938">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:52:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="269E3B04-E52A-A83C-E27E-E0590AFD4173"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

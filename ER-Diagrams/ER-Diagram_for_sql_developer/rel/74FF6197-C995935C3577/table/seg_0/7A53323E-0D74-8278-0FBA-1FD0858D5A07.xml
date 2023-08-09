@@ -1,0 +1,204 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A53323E-0D74-8278-0FBA-1FD0858D5A07" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="SMARTPHONES">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SMARTPHONES</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPHONE_ID" id="EC38C1A7-64B9-B4E1-2E80-6FE276AD45D4">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>SPHONE_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPPLIER_ID" id="2FC8FBC1-6AC1-64B4-7142-C8E6239FA6EB">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>SUPPLIER_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="527B9B42-7B42-EBBD-4C98-5B74F90C1A51" referredColumn="8F1E316F-7955-8447-1BCE-EE62969968B1"/>
+</associations>
+</Column>
+<Column name="CATEGORY_ID" id="D1BBC8E8-1902-1D65-F620-2415D8EF1B5B">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>CATEGORY_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A148B8CB-1726-40DF-639F-2BF350C960A7" referredColumn="3BDED440-63E8-DE68-D3ED-454F7330E204"/>
+</associations>
+</Column>
+<Column name="SPHONE_NAME" id="BBC4301E-E633-1165-C5F3-6BA3819EDF5D">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>SPHONE_NAME</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPHONE_TYPE" id="A88D5801-9BD1-ECE0-1C92-D88212849B9E">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>SPHONE_TYPE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPHONE_COLOR" id="8AE7A7A8-61B1-B6AE-2C7E-C6A14A2D2496">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>SPHONE_COLOR</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPHONE_BRAND" id="AB4485D2-B7EE-9825-F9E6-85277571157C">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>SPHONE_BRAND</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPHONE_MODEL" id="44D7EBFD-6EF5-328E-1EC4-AE9C19017CD6">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>SPHONE_MODEL</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPHONE_PRICE" id="3B54B699-7410-51E0-ACB2-9884A07FC475">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>SPHONE_PRICE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPHONE_DISCOUNT" id="60F8F38C-EA8A-4E47-D3FD-8010DBD24B70">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>SMARTPHONES</sourceObjSchema>
+<sourceObjName>SPHONE_DISCOUNT</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:43 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18EB5213-1854-5AEF-F6DA-E2FF1E92B242" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="SMARTPHONES_PK">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SYS_C002011836</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:45 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC38C1A7-64B9-B4E1-2E80-6FE276AD45D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33AA99AE-8303-8116-CDC7-AFFFE808B78C" name="SYS_C002011837">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1BBC8E8-1902-1D65-F620-2415D8EF1B5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D672094A-F773-5A47-DC25-7A5C0C2AA755" name="SYS_C002011838">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:40:50 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FC8FBC1-6AC1-64B4-7142-C8E6239FA6EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

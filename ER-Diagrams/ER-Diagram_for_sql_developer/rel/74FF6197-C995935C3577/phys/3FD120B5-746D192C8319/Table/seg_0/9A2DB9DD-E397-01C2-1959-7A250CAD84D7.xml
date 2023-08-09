@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="EMPLOYEE" directorySegmentName="seg_0" id="9A2DB9DD-E397-01C2-1959-7A250CAD84D7">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:49:19 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2AA718E8-0B49-7A74-330E-B3B226C7A958</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EMPLOYEE_EMAIL" id="01994E6A-7E56-A95B-628D-EABB9434A1B0">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:49:19 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ADDRESS" id="03AC07B1-6E9F-291D-C4C7-7EAAAEBDF28F">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:49:19 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_NAME" id="2C407289-3083-D46A-A2F6-9F1E2E4B72D6">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:49:19 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_CONTACT" id="8E653279-7D2D-16C4-6839-130D22A0C861">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:49:19 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="E93D4EEF-FFF2-85C5-9AF0-C33E6F2C22A6">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:49:19 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_DESIGNATION" id="FE0F022F-A7BF-BB2C-FDBC-B4BFBBA695DC">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:49:19 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMPLOYEE_PK" id="4393025D-BD95-BE65-C73E-EC0E31DEE93F">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:49:19 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<segment>162E9FF2-C293-6895-2DB2-276755BF24CF</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<indexSegment>162E9FF2-C293-6895-2DB2-276755BF24CF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

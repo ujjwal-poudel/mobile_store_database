@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B915779-A851-EC73-5F2A-1309624ABAE6" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="CART">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>CART</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CART_ID" id="58D4BEA2-D94E-9AEB-3579-78ACDBCAE329">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>CART_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_ID" id="7F5F0776-2A90-0DBA-6C3A-0102E2FE8218">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>CUSTOMER_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B37CAE5-4D09-5841-CAA9-F4074644D3EA" referredColumn="E5145D7C-E763-5F8F-C1FC-8E09B628D6EA"/>
+</associations>
+</Column>
+<Column name="CATEGORY_ID" id="E1E0A4B5-9E08-D3EA-EF72-80B2FF215D7F">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>CATEGORY_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AF04C3F-8DDC-AB1D-AFDA-67D72E40DB2F" referredColumn="3BDED440-63E8-DE68-D3ED-454F7330E204"/>
+</associations>
+</Column>
+<Column name="ITEM_ID" id="576C488D-8B47-6ED0-596B-60B6C02196C4">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>ITEM_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04C7E7E3-CC8D-BE7F-D31F-160202FF39B5" referredColumn="D11E2BEC-7D14-97EA-2D40-9350E8B6080F"/>
+<colAssociation fkAssociation="458F0610-1A69-C21A-9590-A5B28D9A38E2" referredColumn="1CDC8470-73E9-FD1C-8759-FE817547917F"/>
+<colAssociation fkAssociation="8A468C8C-C7DD-8F21-C727-8B7931F29312" referredColumn="EC38C1A7-64B9-B4E1-2E80-6FE276AD45D4"/>
+<colAssociation fkAssociation="CBFE0CC3-A8DB-3CC4-CE97-887A323F97C4" referredColumn="97E21F72-8909-A089-6970-85BEE9E85458"/>
+</associations>
+</Column>
+<Column name="CART_DATE" id="89B49407-522C-2E36-34E6-574DFC360E38">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>CART_DATE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CART_PRICE" id="326D9290-B912-6137-D758-7C687FAFA5B4">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>CART_PRICE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1DD983DF-54A7-5C5B-09F9-196A4B818C8D" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="CART_PK">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SYS_C002011916</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58D4BEA2-D94E-9AEB-3579-78ACDBCAE329"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E4753BD-34C7-4801-C8B4-7D1D2CEBB7C6" name="FK_CATEGORY">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1E0A4B5-9E08-D3EA-EF72-80B2FF215D7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA9845E3-ED30-6868-C068-51B9EFB63C66" name="FK_CUSTOMER">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F5F0776-2A90-0DBA-6C3A-0102E2FE8218"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E531E22-D06F-59B8-D7CE-47F06839BD49" name="FK_ITEM_ACCESSORY">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="576C488D-8B47-6ED0-596B-60B6C02196C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C527D78D-2D27-57E2-8066-80FA6F8246BB" name="FK_ITEM_FEATUREPHONES">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="576C488D-8B47-6ED0-596B-60B6C02196C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DD4FD07-F269-204B-BE9F-3F3E6420BB61" name="FK_ITEM_SMARTPHONES">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="576C488D-8B47-6ED0-596B-60B6C02196C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96EAC91F-E767-BF47-F5F0-3836CE024500" name="FK_ITEM_TABLETS">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:15 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="576C488D-8B47-6ED0-596B-60B6C02196C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

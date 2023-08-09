@@ -1,0 +1,204 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="061744BA-22E4-9346-9E0C-79EFC800E7F5" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="ACCESSORY">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>ACCESSORY</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACCESSORY_ID" id="D11E2BEC-7D14-97EA-2D40-9350E8B6080F">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>ACCESSORY_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPPLIER_ID" id="FEFD64F3-B874-FC21-77C2-2B4AE8363D35">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>SUPPLIER_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38AB2B93-BDDB-0B61-E89A-0D310BCA86B9" referredColumn="8F1E316F-7955-8447-1BCE-EE62969968B1"/>
+</associations>
+</Column>
+<Column name="CATEGORY_ID" id="602B0D03-97D9-986F-2FAE-77AFB41D4FB5">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>CATEGORY_ID</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E81F100D-1008-CE1A-468D-3C2789068257" referredColumn="3BDED440-63E8-DE68-D3ED-454F7330E204"/>
+</associations>
+</Column>
+<Column name="ACCESSORY_NAME" id="A6A2A646-9A3A-B57F-1E85-73A23C546F24">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>ACCESSORY_NAME</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCESSORY_TYPE" id="CCCE4E1A-DAD6-A755-7D76-A7C7F58A5A78">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>ACCESSORY_TYPE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCESSORY_COLOR" id="3E3A1939-A417-F42D-D91D-5E14B45FB191">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>ACCESSORY_COLOR</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCESSORY_BRAND" id="D9D92E67-FDE1-5280-885E-7834634148CD">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>ACCESSORY_BRAND</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCESSORY_MODEL" id="39494E7C-856D-A487-AE8A-7E2117E99923">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>ACCESSORY_MODEL</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCESSORY_PRICE" id="80DAA239-1C8C-1CFB-F005-C5B3A806D5BB">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>ACCESSORY_PRICE</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCESSORY_DISCOUNT" id="F863EE78-AE7F-41E5-9434-F89173E27345">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>ACCESSORY</sourceObjSchema>
+<sourceObjName>ACCESSORY_DISCOUNT</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D53784A-7898-4357-DFF7-EB5C765E3F13" schemaObject="2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD" name="ACCESSORY_PK">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SYS_C002011906</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D11E2BEC-7D14-97EA-2D40-9350E8B6080F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49D1B45B-BFCB-7156-2DC0-386B92566D21" name="SYS_C002011907">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:28 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="602B0D03-97D9-986F-2FAE-77AFB41D4FB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59746A58-DF3E-4B69-4B83-EF7293445FAE" name="SYS_C002011908">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:29 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEFD64F3-B874-FC21-77C2-2B4AE8363D35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

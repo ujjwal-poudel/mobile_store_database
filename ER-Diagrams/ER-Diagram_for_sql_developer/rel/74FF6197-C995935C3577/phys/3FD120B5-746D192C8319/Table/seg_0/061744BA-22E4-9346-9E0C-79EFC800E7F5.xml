@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ACCESSORY" directorySegmentName="seg_0" id="061744BA-22E4-9346-9E0C-79EFC800E7F5">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2AA718E8-0B49-7A74-330E-B3B226C7A958</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ACCESSORY_MODEL" id="39494E7C-856D-A487-AE8A-7E2117E99923">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESSORY_COLOR" id="3E3A1939-A417-F42D-D91D-5E14B45FB191">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CATEGORY_ID" id="602B0D03-97D9-986F-2FAE-77AFB41D4FB5">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESSORY_PRICE" id="80DAA239-1C8C-1CFB-F005-C5B3A806D5BB">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESSORY_NAME" id="A6A2A646-9A3A-B57F-1E85-73A23C546F24">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESSORY_TYPE" id="CCCE4E1A-DAD6-A755-7D76-A7C7F58A5A78">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESSORY_ID" id="D11E2BEC-7D14-97EA-2D40-9350E8B6080F">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESSORY_BRAND" id="D9D92E67-FDE1-5280-885E-7834634148CD">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESSORY_DISCOUNT" id="F863EE78-AE7F-41E5-9434-F89173E27345">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUPPLIER_ID" id="FEFD64F3-B874-FC21-77C2-2B4AE8363D35">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:26 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C002011907" id="49D1B45B-BFCB-7156-2DC0-386B92566D21">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:28 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C002011908" id="59746A58-DF3E-4B69-4B83-EF7293445FAE">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:29 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ACCESSORY_PK" id="2D53784A-7898-4357-DFF7-EB5C765E3F13">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:43:28 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<segment>162E9FF2-C293-6895-2DB2-276755BF24CF</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<indexSegment>162E9FF2-C293-6895-2DB2-276755BF24CF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

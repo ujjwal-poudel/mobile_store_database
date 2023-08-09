@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DB938087-3D40-4FD3-F44A-EB6511E5F8B4" containerWithKeyObject="B367CDAF-A28B-8E7A-1E53-E8ED43BA55E1" localFKIndex="CAA12801-FFFD-C968-A604-13BFB373BB3C" name="SYS_C002011938">
+<sourceConnName>301284284</sourceConnName>
+<sourceObjSchema>COMP122_M23_ZA_33</sourceObjSchema>
+<sourceObjName>SYS_C002011938</sourceObjName>
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:52:05 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<referredTableLongName>COMP122_M23_ZA_33.PAYMENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8E430FB5-F3ED-A76A-3100-5CFD4353921A</referredTableID>
+<keyObject>9E60BD79-3596-EB96-59EF-73548A712183</keyObject>
+<referredKeyID>9E60BD79-3596-EB96-59EF-73548A712183</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>PAYMENT_REF_NUMBER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

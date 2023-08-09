@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CART" directorySegmentName="seg_0" id="8B915779-A851-EC73-5F2A-1309624ABAE6">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2AA718E8-0B49-7A74-330E-B3B226C7A958</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CART_PRICE" id="326D9290-B912-6137-D758-7C687FAFA5B4">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ITEM_ID" id="576C488D-8B47-6ED0-596B-60B6C02196C4">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CART_ID" id="58D4BEA2-D94E-9AEB-3579-78ACDBCAE329">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUSTOMER_ID" id="7F5F0776-2A90-0DBA-6C3A-0102E2FE8218">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CART_DATE" id="89B49407-522C-2E36-34E6-574DFC360E38">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CATEGORY_ID" id="E1E0A4B5-9E08-D3EA-EF72-80B2FF215D7F">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CATEGORY" id="0E4753BD-34C7-4801-C8B4-7D1D2CEBB7C6">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ITEM_ACCESSORY" id="5E531E22-D06F-59B8-D7CE-47F06839BD49">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ITEM_SMARTPHONES" id="8DD4FD07-F269-204B-BE9F-3F3E6420BB61">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ITEM_TABLETS" id="96EAC91F-E767-BF47-F5F0-3836CE024500">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:15 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ITEM_FEATUREPHONES" id="C527D78D-2D27-57E2-8066-80FA6F8246BB">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CUSTOMER" id="EA9845E3-ED30-6868-C068-51B9EFB63C66">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CART_PK" id="1DD983DF-54A7-5C5B-09F9-196A4B818C8D">
+<createdBy>ujjwa</createdBy>
+<createdTime>2023-08-09 06:46:14 UTC</createdTime>
+<ownerDesignName>ER-Diagram_for_sql_developer</ownerDesignName>
+<schemaObject>2A5C11F7-B25A-6D17-6A1A-2AC6B10294DD</schemaObject>
+<segment>162E9FF2-C293-6895-2DB2-276755BF24CF</segment>
+<tableSpace>1A4FFD99-467E-A49F-75C2-1C54551674BB</tableSpace>
+<indexSegment>162E9FF2-C293-6895-2DB2-276755BF24CF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>
