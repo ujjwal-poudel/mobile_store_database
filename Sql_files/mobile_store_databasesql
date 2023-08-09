@@ -1,0 +1,356 @@
+--Supplier
+CREATE TABLE Supplier(
+    Supplier_Id NUMBER PRIMARY KEY,
+    Supplier_Name VARCHAR2(255),
+    Supplier_Contract_Date DATE
+);
+
+-- Insert data into Supplier table
+INSERT INTO Supplier (Supplier_Id, Supplier_Name, Supplier_Contract_Date)
+VALUES(1, 'Samsung Electronics', '2023-07-15');
+    INSERT INTO Supplier (Supplier_Id, Supplier_Name, Supplier_Contract_Date)
+VALUES(2, 'Apple Inc.', '2023-06-20');
+    INSERT INTO Supplier (Supplier_Id, Supplier_Name, Supplier_Contract_Date)
+VALUES(3, 'Sony Corporation', '2023-08-01');
+    INSERT INTO Supplier (Supplier_Id, Supplier_Name, Supplier_Contract_Date)
+VALUES(4, 'LG Electronics', '2023-07-10');
+
+SELECT * FROM Supplier;
+
+
+--Category
+CREATE TABLE Category (
+    Category_Id Number PRIMARY KEY,
+    Category_Type VARCHAR2(25),
+    Category_Quantity Number ,
+    Category_price Number
+);
+
+INSERT INTO Category (Category_Id, Category_Type, Category_Quantity)
+VALUES(1, 'Smart_Phone', 10);
+INSERT INTO Category (Category_Id, Category_Type, Category_Quantity)
+VALUES(2, 'Feature_Phones', 4);
+INSERT INTO Category (Category_Id, Category_Type, Category_Quantity)
+VALUES(3, 'Tablets', 6);
+INSERT INTO Category (Category_Id, Category_Type, Category_Quantity)
+VALUES(4, 'Accessories', 12);
+
+SELECT * FROM Category;
+
+
+--Smart Phones
+CREATE TABLE SmartPhones (
+    SPhone_Id NUMBER PRIMARY KEY,
+    Supplier_Id Number,
+    Category_Id NUMBER,
+    SPhone_Name VARCHAR2(255),
+    SPhone_Type VARCHAR2(255),
+    SPhone_Color VARCHAR2(50),
+    SPhone_Brand VARCHAR2(100),
+    SPhone_Model VARCHAR2(100),
+    SPhone_Price NUMBER(10, 2),
+    SPhone_Discount NUMBER(5, 2),
+   
+    FOREIGN KEY (Category_Id) REFERENCES Category(Category_Id),
+    FOREIGN KEY (Supplier_Id) REFERENCES Supplier(Supplier_Id)
+);
+
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (1, 1, 1, 'Samsung Galaxy S21', 'Smartphone', 'Phantom Gray', 'Samsung', 'Galaxy S21', 999.99, 0.1);
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (2, 1, 1, 'Samsung Galaxy Note 20 Ultra', 'Smartphone', 'Mystic Bronze', 'Samsung', 'Galaxy Note 20 Ultra', 1199.99, 0.15);
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (3, 2, 1, 'iPhone 13 Pro', 'Smartphone', 'Graphite', 'Apple', 'iPhone 13 Pro', 1099.00, 0.1);
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (4, 2, 1, 'iPhone 13 Mini', 'Smartphone', 'Product Red', 'Apple', 'iPhone 13 Mini', 699.00, 0.05);
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (5, 3, 1, 'Sony Xperia 1 III', 'Smartphone', 'Black', 'Sony', 'Xperia 1 III', 1099.99, 0.1);
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (6, 3, 1, 'Sony Xperia 5 III', 'Smartphone', 'Green', 'Sony', 'Xperia 5 III', 899.99, 0.05);
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (7, 4, 1, 'LG Velvet 2 Pro', 'Smartphone', 'Aurora White', 'LG', 'Velvet 2 Pro', 799.00, 0.1);
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (8, 4, 1, 'LG Wing 5G', 'Smartphone', 'Illusion Sky', 'LG', 'Wing 5G', 899.00, 0.15);
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (9, 1, 1, 'Samsung Galaxy Z Flip 3', 'Smartphone', 'Cream', 'Samsung', 'Galaxy Z Flip 3', 1099.99, 0.1);
+INSERT INTO SmartPhones (SPhone_Id, Supplier_Id, Category_Id, SPhone_Name, SPhone_Type, SPhone_Color, SPhone_Brand, SPhone_Model, SPhone_Price, SPhone_Discount)
+VALUES (10, 2, 1, 'iPhone 13 Pro Max', 'Smartphone', 'Silver', 'Apple', 'iPhone 13 Pro Max', 1199.00, 0.1);
+
+SELECT * FROM SmartPhones;
+
+
+--Tablets
+CREATE TABLE Tablets (
+    Tablets_Id NUMBER PRIMARY KEY,
+    Category_Id NUMBER,
+    Supplier_Id Number,
+    Tablets_Name VARCHAR2(255),
+    Tablets_Type VARCHAR2(255),
+    Tablets_Color VARCHAR2(50),
+    Tablets_Brand VARCHAR2(100),
+    Tablets_Model VARCHAR2(100),
+    Tablets_Price NUMBER(10, 2),
+    Tablets_Discount NUMBER(5, 2),
+   
+    CONSTRAINT fk_CID FOREIGN KEY (Category_Id) REFERENCES Category(Category_Id),
+    CONSTRAINT fk_SID FOREIGN KEY (Supplier_Id) REFERENCES Supplier(Supplier_Id)
+);
+
+-- Insert data into Tablets table
+INSERT INTO Tablets (Tablets_Id, Category_Id, Supplier_Id, Tablets_Name, Tablets_Type, Tablets_Color, Tablets_Brand, Tablets_Model, Tablets_Price, Tablets_Discount)
+VALUES (1, 3, 1, 'Samsung Galaxy Tab S7', 'Tablet', 'Mystic Black', 'Samsung', 'Galaxy Tab S7', 649.99, 0.1);
+INSERT INTO Tablets (Tablets_Id, Category_Id, Supplier_Id, Tablets_Name, Tablets_Type, Tablets_Color, Tablets_Brand, Tablets_Model, Tablets_Price, Tablets_Discount)
+VALUES (2, 3, 1, 'Samsung Galaxy Tab S6 Lite', 'Tablet', 'Angora Blue', 'Samsung', 'Galaxy Tab S6 Lite', 349.99, 0.05);
+INSERT INTO Tablets (Tablets_Id, Category_Id, Supplier_Id, Tablets_Name, Tablets_Type, Tablets_Color, Tablets_Brand, Tablets_Model, Tablets_Price, Tablets_Discount)
+VALUES (3, 3, 2, 'iPad Air', 'Tablet', 'Space Gray', 'Apple', 'iPad Air', 599.00, 0.1);
+INSERT INTO Tablets (Tablets_Id, Category_Id, Supplier_Id, Tablets_Name, Tablets_Type, Tablets_Color, Tablets_Brand, Tablets_Model, Tablets_Price, Tablets_Discount)
+VALUES (4, 3, 2, 'iPad Pro', 'Tablet', 'Silver', 'Apple', 'iPad Pro', 999.00, 0.1);
+INSERT INTO Tablets (Tablets_Id, Category_Id, Supplier_Id, Tablets_Name, Tablets_Type, Tablets_Color, Tablets_Brand, Tablets_Model, Tablets_Price, Tablets_Discount)
+VALUES (5, 3, 3, 'Sony Xperia Z4 Tablet', 'Tablet', 'Black', 'Sony', 'Xperia Z4 Tablet', 499.99, 0.05);
+INSERT INTO Tablets (Tablets_Id, Category_Id, Supplier_Id, Tablets_Name, Tablets_Type, Tablets_Color, Tablets_Brand, Tablets_Model, Tablets_Price, Tablets_Discount)
+VALUES (6, 3, 3, 'Sony Xperia Z6 Tablet', 'Tablet', 'White', 'Sony', 'Xperia Z6 Tablet', 599.99, 0.1);
+
+SELECT * FROM TABLETS;
+
+
+--Feature Phones
+CREATE TABLE FeaturePhones (
+    Fphone_Id NUMBER PRIMARY KEY,
+    Supplier_Id Number,
+    Category_Id NUMBER,
+    Fphone_Name VARCHAR2(255),
+    Fphone_Type VARCHAR2(255),
+    Fphone_Color VARCHAR2(50),
+    Fphone_Brand VARCHAR2(100),
+    Fphone_Model VARCHAR2(100),
+    Fphone_Price NUMBER(10, 2),
+    Fphone_Discount NUMBER(5, 2),
+   
+    FOREIGN KEY (Category_Id) REFERENCES Category(Category_Id),
+    FOREIGN KEY (Supplier_Id) REFERENCES Supplier(Supplier_Id)
+);
+
+-- Insert data into FeaturePhones table
+INSERT INTO FeaturePhones (Fphone_Id, Supplier_Id, Category_Id, Fphone_Name, Fphone_Type, Fphone_Color, Fphone_Brand, Fphone_Model, Fphone_Price, Fphone_Discount)
+VALUES (1, 1, 2, 'Samsung Galaxy M21', 'Feature Phone', 'Midnight Blue', 'Samsung', 'Galaxy M21', 149.99, 0.05);
+INSERT INTO FeaturePhones (Fphone_Id, Supplier_Id, Category_Id, Fphone_Name, Fphone_Type, Fphone_Color, Fphone_Brand, Fphone_Model, Fphone_Price, Fphone_Discount)
+VALUES (2, 1, 2, 'Samsung Guru Music 2', 'Feature Phone', 'White', 'Samsung', 'Guru Music 2', 29.99, 0.1);
+INSERT INTO FeaturePhones (Fphone_Id, Supplier_Id, Category_Id, Fphone_Name, Fphone_Type, Fphone_Color, Fphone_Brand, Fphone_Model, Fphone_Price, Fphone_Discount)
+VALUES (3, 2, 2, 'Nokia 3310', 'Feature Phone', 'Warm Red', 'Nokia', '3310', 49.99, 0.05);
+INSERT INTO FeaturePhones (Fphone_Id, Supplier_Id, Category_Id, Fphone_Name, Fphone_Type, Fphone_Color, Fphone_Brand, Fphone_Model, Fphone_Price, Fphone_Discount)
+VALUES (4, 2, 2, 'Nokia 8110 4G', 'Feature Phone', 'Yellow', 'Nokia', '8110 4G', 79.99, 0.1);
+
+SELECT * FROM FeaturePhones;
+
+--Accesory
+CREATE TABLE Accessory (
+    Accessory_Id NUMBER PRIMARY KEY,
+    Supplier_Id Number,
+    Category_Id NUMBER,
+    Accessory_Name VARCHAR2(255),
+    Accessory_Type VARCHAR2(255),
+    Accessory_Color VARCHAR2(50),
+    Accessory_Brand VARCHAR2(100),
+    Accessory_Model VARCHAR2(100),
+    Accessory_Price NUMBER(10, 2),
+    Accessory_Discount NUMBER(5, 2),
+   
+    FOREIGN KEY (Category_Id) REFERENCES Category(Category_Id),
+    FOREIGN KEY (Supplier_Id) REFERENCES Supplier(Supplier_Id)
+);
+
+-- Insert data into Accessory table
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (1, 1, 4, 'Samsung Silicone Phone Case', 'Case', 'Black', 'Samsung', 'Silicone Phone Case', 19.99, 0.05);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (2, 1, 4, 'Samsung Wireless Charger', 'Charger', 'White', 'Samsung', 'Wireless Charger', 29.99, 0.1);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (3, 2, 4, 'Apple Leather iPhone Case', 'Case', 'Saddle Brown', 'Apple', 'Leather iPhone Case', 39.99, 0.05);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (4, 2, 4, 'Apple AirPods Pro', 'Headphones', 'White', 'Apple', 'AirPods Pro', 249.00, 0.1);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (5, 3, 4, 'Sony Extra Bass Headphones', 'Headphones', 'Black', 'Sony', 'Extra Bass', 89.99, 0.05);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (6, 3, 4, 'Sony Portable Bluetooth Speaker', 'Speaker', 'Blue', 'Sony', 'Portable Bluetooth Speaker', 79.99, 0.1);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (7, 4, 4, 'LG Tone Free Earbuds', 'Earbuds', 'Black', 'LG', 'Tone Free', 129.00, 0.05);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (8, 4, 4, 'LG Portable Phone Charger', 'Charger', 'White', 'LG', 'Portable Phone Charger', 39.99, 0.1);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (9, 1, 4, 'Samsung Clear Phone Case', 'Case', 'Clear', 'Samsung', 'Clear Phone Case', 14.99, 0.05);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (10, 2, 4, 'Apple MagSafe Charger', 'Charger', 'White', 'Apple', 'MagSafe Charger', 39.00, 0.1);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (11, 3, 4, 'Sony Noise-Canceling Headphones', 'Headphones', 'Silver', 'Sony', 'Noise-Canceling Headphones', 179.99, 0.05);
+INSERT INTO Accessory (Accessory_Id, Supplier_Id, Category_Id, Accessory_Name, Accessory_Type, Accessory_Color, Accessory_Brand, Accessory_Model, Accessory_Price, Accessory_Discount)
+VALUES (12, 4, 4, 'LG Bluetooth Wireless Speaker', 'Speaker', 'Red', 'LG', 'Bluetooth Wireless Speaker', 69.00, 0.1);
+
+SELECT * FROM Accessory;
+
+--Employee
+CREATE TABLE Employee (
+    Employee_ID NUMBER PRIMARY KEY,
+    Employee_Name VARCHAR2(100),
+    Employee_Designation VARCHAR2(50),
+    Employee_Email VARCHAR2(100),
+    Employee_Address VARCHAR2(200),
+    Employee_Contact VARCHAR2(20)
+);
+
+-- Insert data into Employee table
+INSERT INTO Employee (Employee_ID, Employee_Name, Employee_Designation, Employee_Email, Employee_Address, Employee_Contact)
+VALUES (1, 'John Smith', 'Store Manager', 'john.smith@example.com', '123 Main St, Cityville', '+1 (123) 456-7890');
+INSERT INTO Employee (Employee_ID, Employee_Name, Employee_Designation, Employee_Email, Employee_Address, Employee_Contact)
+VALUES (2, 'Emily Johnson', 'Sales Associate', 'emily.johnson@example.com', '456 Elm St, Townville', '+1 (234) 567-8901');
+INSERT INTO Employee (Employee_ID, Employee_Name, Employee_Designation, Employee_Email, Employee_Address, Employee_Contact)
+VALUES (3, 'Michael Brown', 'Inventory Manager', 'michael.brown@example.com', '789 Oak St, Villagetown', '+1 (345) 678-9012');
+INSERT INTO Employee (Employee_ID, Employee_Name, Employee_Designation, Employee_Email, Employee_Address, Employee_Contact)
+VALUES (4, 'Sophia Davis', 'Customer Service Representative', 'sophia.davis@example.com', '567 Pine St, Hamletville', '+1 (456) 789-0123');
+INSERT INTO Employee (Employee_ID, Employee_Name, Employee_Designation, Employee_Email, Employee_Address, Employee_Contact)
+VALUES (5, 'William Miller', 'Technical Support Specialist', 'william.miller@example.com', '234 Cedar St, Riverside', '+1 (567) 890-1234');
+INSERT INTO Employee (Employee_ID, Employee_Name, Employee_Designation, Employee_Email, Employee_Address, Employee_Contact)
+VALUES (6, 'Olivia Wilson', 'Marketing Coordinator', 'olivia.wilson@example.com', '789 Maple St, Forestville', '+1 (678) 901-2345');
+
+SELECT * FROM Employee;
+
+--Customer
+CREATE TABLE Customer (
+    Customer_ID NUMBER PRIMARY KEY,
+    Customer_Name VARCHAR2(100),
+    Customer_Address VARCHAR2(200),
+    Customer_Email VARCHAR2(100),
+    Customer_Offer NUMBER
+);
+
+-- Insert data into Customer table
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (1, 'Emma Johnson', '123 Main St, Cityville', 'emma.johnson@example.com', 10);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (2, 'Liam Smith', '456 Elm St, Townville', 'liam.smith@example.com', 5);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (3, 'Olivia Brown', '789 Oak St, Villagetown', 'olivia.brown@example.com', 15);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (4, 'Noah Davis', '567 Pine St, Hamletville', 'noah.davis@example.com', 10);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (5, 'Ava Miller', '234 Cedar St, Riverside', 'ava.miller@example.com', 0);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (6, 'Sophia Wilson', '789 Maple St, Forestville', 'sophia.wilson@example.com', 5);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (7, 'Jackson Martinez', '890 Oak St, Mountainview', 'jackson.martinez@example.com', 10);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (8, 'Emma White', '345 Elm St, Seaside', 'emma.white@example.com', 0);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (9, 'Aiden Johnson', '789 Pine St, Lakeside', 'aiden.johnson@example.com', 20);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (10, 'Mia Davis', '567 Cedar St, Sunnyside', 'mia.davis@example.com', 10);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (11, 'Liam Wilson', '678 Oak St, Hillside', 'liam.wilson@example.com', 0);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (12, 'Oliver Smith', '890 Elm St, Countryside', 'oliver.smith@example.com', 5);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (13, 'Sophia Brown', '234 Pine St, Meadows', 'sophia.brown@example.com', 15);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (14, 'Emma Martinez', '789 Cedar St, Riverside', 'emma.martinez@example.com', 10);
+INSERT INTO Customer (Customer_ID, Customer_Name, Customer_Address, Customer_Email, Customer_Offer)
+VALUES (15, 'Noah Davis', '567 Oak St, Valleyview', 'noah.davis@example.com', 0);
+
+SELECT * FROM CUSTOMER;
+
+
+--Cart
+CREATE TABLE Cart (
+    Cart_ID NUMBER PRIMARY KEY,
+    Customer_ID NUMBER,
+    Category_Id NUMBER,         -- Reference to the Category table
+    Item_ID NUMBER,             -- Reference to the specific item in its respective category table
+    Cart_Quantity NUMBER,
+    Cart_Date DATE,
+    Cart_Price NUMBER(10, 2),
+    CONSTRAINT fk_Customer FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID),
+    CONSTRAINT fk_Category FOREIGN KEY (Category_Id) REFERENCES Category(Category_Id),
+    CONSTRAINT fk_Item_SmartPhones FOREIGN KEY (Item_ID) REFERENCES SmartPhones(SPhone_Id),
+    CONSTRAINT fk_Item_Tablets FOREIGN KEY (Item_ID) REFERENCES Tablets(Tablets_Id),
+    CONSTRAINT fk_Item_FeaturePhones FOREIGN KEY (Item_ID) REFERENCES FeaturePhones(Fphone_Id),
+    CONSTRAINT fk_Item_Accessory FOREIGN KEY (Item_ID) REFERENCES Accessory(Accessory_Id)
+);
+
+-- Insert data into Cart table
+INSERT INTO Cart (Cart_ID, Customer_ID, Category_Id, Item_ID, Cart_Quantity, Cart_Date, Cart_Price)
+VALUES (1, 1, 1, 1, 2, TO_DATE('2023-08-09', 'YYYY-MM-DD'), 1999.98);
+INSERT INTO Cart (Cart_ID, Customer_ID, Category_Id, Item_ID, Cart_Quantity, Cart_Date, Cart_Price)
+VALUES (2, 1, 3, 3, 1, TO_DATE('2023-08-09', 'YYYY-MM-DD'), 599.00);
+INSERT INTO Cart (Cart_ID, Customer_ID, Category_Id, Item_ID, Cart_Quantity, Cart_Date, Cart_Price)
+VALUES (4, 3, 2, 4, 2, TO_DATE('2023-08-09', 'YYYY-MM-DD'), 79.98);
+INSERT INTO Cart (Cart_ID, Customer_ID, Category_Id, Item_ID, Cart_Quantity, Cart_Date, Cart_Price)
+VALUES (8, 7, 2, 2, 2, TO_DATE('2023-08-09', 'YYYY-MM-DD'), 59.98);
+
+SELECT * FROM CART;
+
+--Payment
+CREATE TABLE Payment (
+    Payment_Ref_Number NUMBER PRIMARY KEY,
+    Customer_ID NUMBER,
+    Payment_Card_Type VARCHAR2(50),
+    Payment_Date DATE,
+    Payment_Time TIMESTAMP,
+    Card_Number VARCHAR2(16),
+    Payment_Total NUMBER(10, 2),
+    Payment_Status VARCHAR2(50),
+    Cart_ID NUMBER,
+    FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID),
+    FOREIGN KEY (Cart_ID) REFERENCES Cart(Cart_ID)  -- Assuming Cart_Price is a column in the Cart table
+);
+
+-- Insert data into Payment table based on the provided Cart IDs and example Payment Totals
+INSERT INTO Payment (Payment_Ref_Number, Customer_ID, Payment_Card_Type, Payment_Date, Payment_Time, Card_Number, Payment_Total, Payment_Status, Cart_ID)
+VALUES (1, 1, 'Visa', DATE '2023-08-09', TIMESTAMP '2023-08-09 14:30:00', '1234567890123456', 2599.98, 'Complete', 1);
+
+INSERT INTO Payment (Payment_Ref_Number, Customer_ID, Payment_Card_Type, Payment_Date, Payment_Time, Card_Number, Payment_Total, Payment_Status, Cart_ID)
+VALUES (2, 1, 'MasterCard', DATE '2023-08-10', TIMESTAMP '2023-08-10 15:45:00', '9876543210987654', 599.00, 'Complete', 2);
+
+INSERT INTO Payment (Payment_Ref_Number, Customer_ID, Payment_Card_Type, Payment_Date, Payment_Time, Card_Number, Payment_Total, Payment_Status, Cart_ID)
+VALUES (3, 3, 'American Express', DATE '2023-08-11', TIMESTAMP '2023-08-11 12:00:00', '5678901234567890', 79.98, 'Complete', 4);
+
+INSERT INTO Payment (Payment_Ref_Number, Customer_ID, Payment_Card_Type, Payment_Date, Payment_Time, Card_Number, Payment_Total, Payment_Status, Cart_ID)
+VALUES (4, 7, 'Visa', DATE '2023-08-12', TIMESTAMP '2023-08-12 09:30:00', '1111222233334444', 0, 'Incomplete', 8);
+
+SELECT * FROM Payment;
+
+--Shipping
+CREATE TABLE Shipping (
+    Payment_Ref_Number NUMBER,
+    Shipping_Status VARCHAR2(50),
+    Shipping_Date DATE,
+    Shipping_Date_Remaining NUMBER,
+    FOREIGN KEY (Payment_Ref_Number) REFERENCES Payment(Payment_Ref_Number)
+);
+
+-- Insert data into Shipping table
+INSERT INTO Shipping (Payment_Ref_Number, Shipping_Status, Shipping_Date, Shipping_Date_Remaining)
+VALUES (1, 'Complete', DATE '2023-08-10', 0);
+
+INSERT INTO Shipping (Payment_Ref_Number, Shipping_Status, Shipping_Date, Shipping_Date_Remaining)
+VALUES (2, 'Incomplete', DATE '2023-08-20', 10);
+
+INSERT INTO Shipping (Payment_Ref_Number, Shipping_Status, Shipping_Date, Shipping_Date_Remaining)
+VALUES (3, 'Complete', DATE '2023-08-09', 0);
+
+SELECT * FROM Shipping;
+
+--Sales
+CREATE TABLE Sales (
+    Sales_ID NUMBER PRIMARY KEY,
+    Payment_Ref_Number NUMBER,
+    FOREIGN KEY (Payment_Ref_Number) REFERENCES Payment(Payment_Ref_Number)
+);
+
+INSERT INTO Sales (Sales_ID, Payment_Ref_Number)
+VALUES (1, 1);
+INSERT INTO Sales (Sales_ID, Payment_Ref_Number)
+VALUES (2, 2);
+INSERT INTO Sales (Sales_ID, Payment_Ref_Number)
+VALUES (3, 3);
+
+SELECT * FROM SALES;
+
+
